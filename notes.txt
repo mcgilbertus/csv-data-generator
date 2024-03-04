@@ -1,0 +1,40 @@
+
+- Separate all code in different classes/methods!
+- Don't keep all data in memory! the goal is to generate big files
+
+Unit Tests to add
+1) for this block:
+
+    using (TextFieldParser csvParser = new TextFieldParser(fileInput))
+    {
+        csvParser.CommentTokens = new string[] { "#" };
+        csvParser.SetDelimiters(new string[] { "," });
+        csvParser.HasFieldsEnclosedInQuotes = true;
+
+
+        while (!csvParser.EndOfData)
+        {
+            // Read current line fields, pointer moves to the next line.
+            List<string> fields = csvParser.ReadFields().ToList();
+            csv.Add(fields);
+            columns += 1;
+        }
+
+        csvParser.Close();
+    }
+    // csv format is in fieldName, dataType, format, from, to
+    // dataType is only used for DateTime
+
+    // casting the entered string data into int so we can use them.
+    numberRecords = Int32.Parse(records);
+
+- test the happy path: given a well-structured file, the program should be able to load it and add all data to the list
+- test missing file: if fileInput does not reference a valid file, an error should be raised
+- test errors in file parsing: fileInput ref a valid file, but the file structure is not correct (missing parameters / wrong format). 
+  Program should raise an exception? or take default values for those parameters?
+  For example, main loop compares a type with " int" (with a space) is that correct?
+
+2) main loop
+- test a happy path for each supported column type
+- test that if a column type is not supported, code should not generate data or directly throw an exception
+- test result file write; if escaped characters are present, verify that they are correctly written

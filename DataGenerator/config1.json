@@ -1,0 +1,46 @@
+﻿{
+  "schema": [
+    {
+      "fieldName": "NameString",
+      "dataType": "string",
+      "format": "This is the name number {0}",
+      "from": "1",
+      "to": "100"
+    },
+    {
+      "fieldName": "Integer column",
+      "dataType": "long",
+      "format": "",
+      "from": "1",
+      "to": "100"
+    },
+    {
+      "fieldName": "Date without time",
+      "dataType": "date",
+      "format": "yyyy-MM-dd",
+      "from": "2000-01-01",
+      "to": "2010-10-20"
+    },
+    {
+      "fieldName": "Date and time",
+      "dataType": "datetime",
+      "format": "yyyy-MM-dd HH:mm:ss",
+      "from": "2000-01-01 00:00:00",
+      "to": "2010-10-20 09:32"
+    },
+    {
+      "fieldName": "Time only",
+      "dataType": "time",
+      "format": "HH:mm:ss",
+      "from": "00:00",
+      "to": "18:32:45"
+    },
+    {
+      "fieldName": "Float column",
+      "dataType": "float",
+      "format": "{0: 0.000}",
+      "from": "1.234",
+      "to": "20.31"
+    }
+  ]
+}

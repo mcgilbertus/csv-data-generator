@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGenerator", "DataGenerator\DataGenerator.csproj", "{0CD9C8E8-C2A7-47A3-8858-7A427DEDB30E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGenerator.Tests", "DataGenerator.Tests\DataGenerator.Tests.csproj", "{FBC8992C-07E8-41C1-B8B9-CE0F15433EBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CD9C8E8-C2A7-47A3-8858-7A427DEDB30E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD9C8E8-C2A7-47A3-8858-7A427DEDB30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD9C8E8-C2A7-47A3-8858-7A427DEDB30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD9C8E8-C2A7-47A3-8858-7A427DEDB30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC8992C-07E8-41C1-B8B9-CE0F15433EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC8992C-07E8-41C1-B8B9-CE0F15433EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC8992C-07E8-41C1-B8B9-CE0F15433EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC8992C-07E8-41C1-B8B9-CE0F15433EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F45CFE1C-59FE-4D80-BD9B-70AE69D58953}
+	EndGlobalSection
+EndGlobal

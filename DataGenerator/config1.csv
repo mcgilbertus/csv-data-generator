@@ -1,0 +1,7 @@
+﻿# fieldName, data type, format, from, to
+Name,string,This is the name number {0},1,100
+Integer,long,,1,100
+"Date without time",date,"yyyy-MM-dd","2000-01-01","2010-10-20"
+"Date and time",datetime,"yyyy-MM-dd HH:mm:ss","2000-01-01 00:00:00","2010-10-20 09:32"
+"Time only",time,"HH:mm:ss","00:00","18:32:45"
+"Float",float,{0:0.000},1.234,20.31

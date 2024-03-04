@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "DataGenerator": {
+      "commandName": "Project",
+      "commandLineArgs": "..\\..\\..\\config2.json 500 ..\\..\\..\\products.csv"
+    }
+  }
+}
